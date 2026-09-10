@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Clio Huang - 个人简历</title>
+  <meta name="description" content="Clio Huang 的交互式个人简历" />
+
+  <!-- Google Font (可替换) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="preload">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="回到顶部">Clio Huang</a>
+
+      <button class="nav-toggle" aria-label="菜单" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav class="nav" id="main-nav">
+        <a href="#about" class="nav-link">关于</a>
+        <a href="#skills" class="nav-link">技能</a>
+        <a href="#experience" class="nav-link">经历</a>
+        <a href="#projects" class="nav-link">项目</a>
+        <a href="#contact" class="nav-link">联系方式</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h1 class="reveal-up">你好，我是 <span class="accent">Clio Huang</span></h1>
+          <p class="lead reveal-up delay-1">
+            前端工程师 & 交互设计师 — 致力于打造可访问、性能优先且视觉精致的产品体验。
+          </p>
+
+          <div class="hero-cta reveal-up delay-2">
+            <a class="btn primary" href="#projects">查看项目</a>
+            <a class="btn outline" href="#contact">联系我</a>
+          </div>
+
+          <ul class="meta-list reveal-up delay-3">
+            <li><strong>地点：</strong> 北京，中国</li>
+            <li><strong>邮箱：</strong> <button class="link-like" data-copy="clio.huang@example.com">clio.huang@example.com</button></li>
+            <li><strong>电话：</strong> <button class="link-like" data-copy="+86 138 0000 0000">+86 138 0000 0000</button></li>
+          </ul>
+        </div>
+
+        <div class="hero-right reveal-fade">
+          <div class="profile-card">
+            <div class="avatar" role="img" aria-label="个人头像">
+              <!-- 占位 SVG，可替换为 <img src="your-photo.jpg"> -->
+              <svg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <defs>
+                  <linearGradient id="g" x1="0" x2="1">
+                    <stop offset="0" stop-color="#6C63FF"/>
+                    <stop offset="1" stop-color="#00C2A8"/>
+                  </linearGradient>
+                </defs>
+                <rect rx="20" width="160" height="160" fill="url(#g)"/>
+                <g fill="#fff" transform="translate(30,30)">
+                  <circle cx="50" cy="36" r="22" opacity="0.95"></circle>
+                  <rect x="12" y="74" width="76" height="20" rx="10" opacity="0.12"></rect>
+                  <rect x="18" y="100" width="64" height="6" rx="3" opacity="0.12"></rect>
+                </g>
+              </svg>
+            </div>
+            <div class="profile-info">
+              <h3>Clio Huang</h3>
+              <p class="muted">前端工程师 · 设计驱动</p>
+              <div class="socials">
+                <a href="https://github.com/clio-huang" aria-label="GitHub" class="social" target="_blank" rel="noopener">GitHub</a>
+                <a href="#" aria-label="LinkedIn" class="social">LinkedIn</a>
+                <a href="#" aria-label="作品集" class="social">作品集</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wave separator -->
+      <div class="wave-sep">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,0 C150,100 350,100 600,50 C850,0 1050,0 1200,80 L1200,120 L0,120 Z" fill="currentColor"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section reveal-section">
+      <div class="container">
+        <h2 class="section-title">个人信息</h2>
+        <div class="about-grid">
+          <div class="about-card reveal-up">
+            <h3>简介</h3>
+            <p>我是一名专注于前端工程与交互设计的工程师，拥有 5 年产品开发经验，擅长将设计语言落地为高性能、可访问的前端实现。热衷于性能优化、组件化与设计系统建设。</p>
+          </div>
+
+          <div class="about-list reveal-up delay-1">
+            <h3>更多信息</h3>
+            <ul>
+              <li><strong>工作年限：</strong>5 年</li>
+              <li><strong>擅长：</strong>HTML、CSS、JavaScript、React、TypeScript、Node.js</li>
+              <li><strong>语言：</strong>中文（母语）、英语（流利）</li>
+              <li><strong>教育：</strong>某大学 / 计算机相关</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section invert reveal-section">
+      <div class="container">
+        <h2 class="section-title">技能特长</h2>
+
+        <div class="skills-grid">
+          <div class="skill-group reveal-up">
+            <h4>前端</h4>
+            <div class="skill">
+              <div class="skill-info"><span>HTML/CSS</span><span class="muted">92%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-fill="92"></div></div>
+            </div>
+            <div class="skill">
+              <div class="skill-info"><span>JavaScript</span><span class="muted">90%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-fill="90"></div></div>
+            </div>
+            <div class="skill">
+              <div class="skill-info"><span>React / Next.js</span><span class="muted">88%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-fill="88"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-group reveal-up delay-1">
+            <h4>后端 & 工具</h4>
+            <div class="skill">
+              <div class="skill-info"><span>Node.js</span><span class="muted">80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-fill="80"></div></div>
+            </div>
+            <div class="skill">
+              <div class="skill-info"><span>TypeScript</span><span class="muted">84%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-fill="84"></div></div>
+            </div>
+            <div class="skill">
+              <div class="skill-info"><span>测试 / CI</span><span class="muted">72%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-fill="72"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-group reveal-up delay-2">
+            <h4>设计 & 软技能</h4>
+            <ul class="skill-chips">
+              <li>交互设计</li>
+              <li>可访问性 (a11y)</li>
+              <li>性能优化</li>
+              <li>团队协作</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="wave-sep flip">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,20 C150,100 350,100 600,50 C850,0 1050,0 1200,80 L1200,120 L0,120 Z" fill="currentColor"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section reveal-section">
+      <div class="container">
+        <h2 class="section-title">工作经历</h2>
+        <div class="timeline reveal-up">
+          <article class="timeline-item">
+            <div class="time">2022 - 至今</div>
+            <div class="content">
+              <h4>公司 A · 高级前端工程师</h4>
+              <p class="muted">负责核心产品前端架构、组件库与性能优化。</p>
+              <ul>
+                <li>主导组件库建设，使开发效率提升 40% 并降低重复代码。</li>
+                <li>引入前端性能监控与优化，显著改善首屏加载与交互体验。</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="time">2019 - 2022</div>
+            <div class="content">
+              <h4>公司 B · 前端工程师</h4>
+              <p class="muted">参与电商平台与内部效率工具的开发与迭代。</p>
+              <ul>
+                <li>实现响应式设计与可访问性改进，提高用户转化率。</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section invert reveal-section">
+      <div class="container">
+        <h2 class="section-title">项目展示</h2>
+
+        <div class="projects-grid">
+          <article class="project-card reveal-up">
+            <a class="project-thumb" href="#" data-project='{"title":"设计系统 · 组件库","desc":"为公司搭建的可复用组件库，覆盖主题、响应式和可访问性规范，支持多端使用。","tags":["React","TypeScript","Design System"],"link":"#"}'>
+              <div class="project-overlay">
+                <h3>设计系统 · 组件库</h3>
+                <p class="muted">React / TypeScript</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="project-card reveal-up delay-1">
+            <a class="project-thumb" href="#" data-project='{"title":"性能优化项目","desc":"在大型单页应用中持续优化，包含首次渲染、资源拆分和懒加载策略，提升 LCP 与交互响应。","tags":["Performance","Webpack"],"link":"#"}'>
+              <div class="project-overlay">
+                <h3>性能优化项目</h3>
+                <p class="muted">性能 / 构建</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="project-card reveal-up delay-2">
+            <a class="project-thumb" href="#" data-project='{"title":"开源工具 · UI 库","desc":"维护的开源 UI 库，提供可访问性组件并在社区持续迭代。","tags":["Open Source","NPM"],"link":"#"}'>
+              <div class="project-overlay">
+                <h3>开源工具 · UI 库</h3>
+                <p class="muted">NPM / Library</p>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+
+      <!-- Project Modal -->
+      <div id="project-modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="modal-card">
+          <button class="modal-close" aria-label="关闭">&times;</button>
+          <h3 id="modal-title"></h3>
+          <p id="modal-desc" class="muted"></p>
+          <div id="modal-tags" class="tag-list"></div>
+          <div class="modal-actions">
+            <a id="modal-link" class="btn primary" href="#" target="_blank" rel="noopener">查看项目</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section reveal-section">
+      <div class="container">
+        <h2 class="section-title">联系方式</h2>
+
+        <div class="contact-grid">
+          <div class="contact-card reveal-up">
+            <h3>说点什么？</h3>
+            <p class="muted">欢迎通过邮箱或下面的表单联系我。</p>
+
+            <form id="contact-form" class="contact-form" action="#" onsubmit="return false">
+              <label>
+                <span>姓名</span>
+                <input type="text" name="name" required>
+              </label>
+              <label>
+                <span>邮箱</span>
+                <input type="email" name="email" required>
+              </label>
+              <label>
+                <span>信息</span>
+                <textarea name="message" rows="4" required></textarea>
+              </label>
+              <div class="form-actions">
+                <button class="btn primary" type="submit">发送</button>
+                <button class="btn outline" type="reset">重置</button>
+              </div>
+              <p class="note muted small">（此示例表单为前端示例；接入后端或使用第三方表单服务进行实际提交）</p>
+            </form>
+          </div>
+
+          <div class="contact-info reveal-up delay-1">
+            <h3>直接联系</h3>
+            <ul class="contact-list">
+              <li><strong>邮箱：</strong> <button class="link-like" data-copy="clio.huang@example.com">clio.huang@example.com</button></li>
+              <li><strong>电话：</strong> <button class="link-like" data-copy="+86 138 0000 0000">+86 138 0000 0000</button></li>
+              <li><strong>地址：</strong> 北京，中国</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Clio Huang · 设计 / 开发</small>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
