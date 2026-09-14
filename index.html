@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Clio Huang - 个人简历</title>
-  <meta name="description" content="Clio Huang 的交互式个人简历" />
+  <title>Clio Huang - 个人作品集</title>
+  <meta name="description" content="Clio Huang 的前端工程与交互设计作品集" />
 
   <!-- Google Font (可替换) -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="preload">
+<body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#home" aria-label="回到顶部">Clio Huang</a>
+      <a class="brand" href="#home" aria-label="回到顶部" data-site-name>Clio Huang</a>
 
       <button class="nav-toggle" aria-label="菜单" aria-expanded="false">
         <span class="hamburger"></span>
@@ -24,9 +24,14 @@
         <a href="#about" class="nav-link">关于</a>
         <a href="#skills" class="nav-link">技能</a>
         <a href="#experience" class="nav-link">经历</a>
+        <a href="#education" class="nav-link">教育</a>
         <a href="#projects" class="nav-link">项目</a>
+        <a href="#more" class="nav-link">荣誉</a>
         <a href="#contact" class="nav-link">联系方式</a>
       </nav>
+      <button class="theme-toggle" type="button" aria-label="切换主题" aria-pressed="false">
+        <span aria-hidden="true">☼</span>
+      </button>
     </div>
   </header>
 
@@ -34,22 +39,17 @@
     <!-- Hero -->
     <section id="home" class="hero section">
       <div class="container hero-grid">
-        <div class="hero-left">
-          <h1 class="reveal-up">你好，我是 <span class="accent">Clio Huang</span></h1>
-          <p class="lead reveal-up delay-1">
-            前端工程师 & 交互设计师 — 致力于打造可访问、性能优先且视觉精致的产品体验。
-          </p>
+        <div class="hero-left" id="hero-content">
+          <h1 class="reveal-up">你好，我是 <span class="accent" data-site-name>Clio Huang</span></h1>
+          <p class="lead reveal-up delay-1" data-site-tagline></p>
 
           <div class="hero-cta reveal-up delay-2">
             <a class="btn primary" href="#projects">查看项目</a>
             <a class="btn outline" href="#contact">联系我</a>
           </div>
 
-          <ul class="meta-list reveal-up delay-3">
-            <li><strong>地点：</strong> 北京，中国</li>
-            <li><strong>邮箱：</strong> <button class="link-like" data-copy="clio.huang@example.com">clio.huang@example.com</button></li>
-            <li><strong>电话：</strong> <button class="link-like" data-copy="+86 138 0000 0000">+86 138 0000 0000</button></li>
-          </ul>
+          <ul class="meta-list reveal-up delay-3" data-contact-list></ul>
+          <div class="hero-stats reveal-up delay-3" data-hero-stats></div>
         </div>
 
         <div class="hero-right reveal-fade">
@@ -72,12 +72,12 @@
               </svg>
             </div>
             <div class="profile-info">
-              <h3>Clio Huang</h3>
-              <p class="muted">前端工程师 · 设计驱动</p>
+              <h3 data-site-name>Clio Huang</h3>
+              <p class="muted" data-site-title></p>
               <div class="socials">
-                <a href="https://github.com/clio-huang" aria-label="GitHub" class="social" target="_blank" rel="noopener">GitHub</a>
-                <a href="#" aria-label="LinkedIn" class="social">LinkedIn</a>
-                <a href="#" aria-label="作品集" class="social">作品集</a>
+                <a data-social="github" aria-label="GitHub" class="social" target="_blank" rel="noopener">GitHub</a>
+                <a data-social="linkedin" aria-label="LinkedIn" class="social">LinkedIn</a>
+                <a data-social="portfolio" aria-label="作品集" class="social">作品集</a>
               </div>
             </div>
           </div>
@@ -96,22 +96,7 @@
     <section id="about" class="section reveal-section">
       <div class="container">
         <h2 class="section-title">个人信息</h2>
-        <div class="about-grid">
-          <div class="about-card reveal-up">
-            <h3>简介</h3>
-            <p>我是一名专注于前端工程与交互设计的工程师，拥有 5 年产品开发经验，擅长将设计语言落地为高性能、可访问的前端实现。热衷于性能优化、组件化与设计系统建设。</p>
-          </div>
-
-          <div class="about-list reveal-up delay-1">
-            <h3>更多信息</h3>
-            <ul>
-              <li><strong>工作年限：</strong>5 年</li>
-              <li><strong>擅长：</strong>HTML、CSS、JavaScript、React、TypeScript、Node.js</li>
-              <li><strong>语言：</strong>中文（母语）、英语（流利）</li>
-              <li><strong>教育：</strong>某大学 / 计算机相关</li>
-            </ul>
-          </div>
-        </div>
+        <div class="about-grid" data-about></div>
       </div>
     </section>
 
@@ -120,48 +105,8 @@
       <div class="container">
         <h2 class="section-title">技能特长</h2>
 
-        <div class="skills-grid">
-          <div class="skill-group reveal-up">
-            <h4>前端</h4>
-            <div class="skill">
-              <div class="skill-info"><span>HTML/CSS</span><span class="muted">92%</span></div>
-              <div class="skill-bar"><div class="skill-fill" data-fill="92"></div></div>
-            </div>
-            <div class="skill">
-              <div class="skill-info"><span>JavaScript</span><span class="muted">90%</span></div>
-              <div class="skill-bar"><div class="skill-fill" data-fill="90"></div></div>
-            </div>
-            <div class="skill">
-              <div class="skill-info"><span>React / Next.js</span><span class="muted">88%</span></div>
-              <div class="skill-bar"><div class="skill-fill" data-fill="88"></div></div>
-            </div>
-          </div>
-
-          <div class="skill-group reveal-up delay-1">
-            <h4>后端 & 工具</h4>
-            <div class="skill">
-              <div class="skill-info"><span>Node.js</span><span class="muted">80%</span></div>
-              <div class="skill-bar"><div class="skill-fill" data-fill="80"></div></div>
-            </div>
-            <div class="skill">
-              <div class="skill-info"><span>TypeScript</span><span class="muted">84%</span></div>
-              <div class="skill-bar"><div class="skill-fill" data-fill="84"></div></div>
-            </div>
-            <div class="skill">
-              <div class="skill-info"><span>测试 / CI</span><span class="muted">72%</span></div>
-              <div class="skill-bar"><div class="skill-fill" data-fill="72"></div></div>
-            </div>
-          </div>
-
-          <div class="skill-group reveal-up delay-2">
-            <h4>设计 & 软技能</h4>
-            <ul class="skill-chips">
-              <li>交互设计</li>
-              <li>可访问性 (a11y)</li>
-              <li>性能优化</li>
-              <li>团队协作</li>
-            </ul>
-          </div>
+        <div class="skills-grid" data-skills>
+          <!-- 内容由 content.js 渲染 -->
         </div>
       </div>
 
@@ -176,30 +121,15 @@
     <section id="experience" class="section reveal-section">
       <div class="container">
         <h2 class="section-title">工作经历</h2>
-        <div class="timeline reveal-up">
-          <article class="timeline-item">
-            <div class="time">2022 - 至今</div>
-            <div class="content">
-              <h4>公司 A · 高级前端工程师</h4>
-              <p class="muted">负责核心产品前端架构、组件库与性能优化。</p>
-              <ul>
-                <li>主导组件库建设，使开发效率提升 40% 并降低重复代码。</li>
-                <li>引入前端性能监控与优化，显著改善首屏加载与交互体验。</li>
-              </ul>
-            </div>
-          </article>
+        <div class="timeline reveal-up" data-experience></div>
+      </div>
+    </section>
 
-          <article class="timeline-item">
-            <div class="time">2019 - 2022</div>
-            <div class="content">
-              <h4>公司 B · 前端工程师</h4>
-              <p class="muted">参与电商平台与内部效率工具的开发与迭代。</p>
-              <ul>
-                <li>实现响应式设计与可访问性改进，提高用户转化率。</li>
-              </ul>
-            </div>
-          </article>
-        </div>
+    <!-- Education -->
+    <section id="education" class="section invert reveal-section">
+      <div class="container">
+        <h2 class="section-title">教育背景</h2>
+        <div class="education-grid" data-education></div>
       </div>
     </section>
 
@@ -208,34 +138,8 @@
       <div class="container">
         <h2 class="section-title">项目展示</h2>
 
-        <div class="projects-grid">
-          <article class="project-card reveal-up">
-            <a class="project-thumb" href="#" data-project='{"title":"设计系统 · 组件库","desc":"为公司搭建的可复用组件库，覆盖主题、响应式和可访问性规范，支持多端使用。","tags":["React","TypeScript","Design System"],"link":"#"}'>
-              <div class="project-overlay">
-                <h3>设计系统 · 组件库</h3>
-                <p class="muted">React / TypeScript</p>
-              </div>
-            </a>
-          </article>
-
-          <article class="project-card reveal-up delay-1">
-            <a class="project-thumb" href="#" data-project='{"title":"性能优化项目","desc":"在大型单页应用中持续优化，包含首次渲染、资源拆分和懒加载策略，提升 LCP 与交互响应。","tags":["Performance","Webpack"],"link":"#"}'>
-              <div class="project-overlay">
-                <h3>性能优化项目</h3>
-                <p class="muted">性能 / 构建</p>
-              </div>
-            </a>
-          </article>
-
-          <article class="project-card reveal-up delay-2">
-            <a class="project-thumb" href="#" data-project='{"title":"开源工具 · UI 库","desc":"维护的开源 UI 库，提供可访问性组件并在社区持续迭代。","tags":["Open Source","NPM"],"link":"#"}'>
-              <div class="project-overlay">
-                <h3>开源工具 · UI 库</h3>
-                <p class="muted">NPM / Library</p>
-              </div>
-            </a>
-          </article>
-        </div>
+        <div class="project-filters" data-project-filters aria-label="项目筛选"></div>
+        <div class="projects-grid" data-projects></div>
       </div>
 
       <!-- Project Modal -->
@@ -285,12 +189,22 @@
 
           <div class="contact-info reveal-up delay-1">
             <h3>直接联系</h3>
-            <ul class="contact-list">
-              <li><strong>邮箱：</strong> <button class="link-like" data-copy="clio.huang@example.com">clio.huang@example.com</button></li>
-              <li><strong>电话：</strong> <button class="link-like" data-copy="+86 138 0000 0000">+86 138 0000 0000</button></li>
-              <li><strong>地址：</strong> 北京，中国</li>
-            </ul>
+            <ul class="contact-list" data-direct-contact></ul>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- More -->
+    <section id="more" class="section invert reveal-section">
+      <div class="container more-grid">
+        <div>
+          <h2 class="section-title">课外活动</h2>
+          <div class="activity-list" data-activities></div>
+        </div>
+        <div>
+          <h2 class="section-title">奖项与荣誉</h2>
+          <ul class="award-list" data-awards></ul>
         </div>
       </div>
     </section>
@@ -302,6 +216,7 @@
     </div>
   </footer>
 
+  <script src="content.js" defer></script>
   <script src="script.js" defer></script>
 </body>
 </html>
