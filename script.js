@@ -122,6 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const link = createElement('a', 'project-thumb');
     link.href = project.link;
     link.dataset.project = JSON.stringify(project);
+    if (project.image) link.style.backgroundImage = `url("${project.image}")`;
     const overlay = createElement('div', 'project-overlay');
     overlay.append(createElement('h3', '', project.title), createElement('p', 'muted', project.category));
     link.append(overlay);

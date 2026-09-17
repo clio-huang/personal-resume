@@ -181,7 +181,7 @@ body{
 .filter-button:hover,.filter-button.active{background:var(--accent-color);color:#fff;border-color:transparent;transform:translateY(-2px)}
 .project-card{border-radius:12px;overflow:hidden}
 .project-card.is-hidden{display:none}
-.project-thumb{display:block;height:180px;background:linear-gradient(180deg,rgba(108,99,255,0.12),rgba(0,194,168,0.06));position:relative;text-decoration:none;color:inherit}
+.project-thumb{display:block;height:180px;background:linear-gradient(180deg,rgba(108,99,255,0.12),rgba(0,194,168,0.06));background-position:center;background-size:cover;position:relative;text-decoration:none;color:inherit}
 .project-overlay{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:1rem;backdrop-filter: blur(2px)}
 .project-overlay h3{margin:0}
 .project-overlay p{margin:.35rem 0 0;color:var(--muted)}
