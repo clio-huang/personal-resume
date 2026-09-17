@@ -2,8 +2,8 @@ window.portfolioData = {
   site: {
     name: '黄昕',
     englishName: 'Xin Huang',
-    title: '新媒体编辑 · 内容创作者 · 艺术科技研究者',
-    tagline: '在影像、现场与数字平台之间，策划有温度的内容，连接人与城市。',
+    title: '影像编辑 · 城市传播 · 现场内容',
+    tagline: '在影像、现场与城市公共空间之间，观察人群，记录日常，放大城市的故事与情绪。',
     location: '广东佛山，中国',
     email: '18923112865@163.com',
     alternateEmail: 'xinhuang6@ln.hk',
@@ -70,11 +70,11 @@ window.portfolioData = {
     '三等奖（省级），第 13 届大学生广告创意大赛（2021）'
   ],
   projects: [
-    { title: '黄埔城市内容运营', category: '城市传播 / 多平台运营', desc: '围绕黄埔城市生活与公共服务，负责 APP、微博、小红书和微信公众号的内容策划、编辑、发布及用户互动。', tags: ['城市传播', '内容运营', '短视频'], link: '#' },
-    { title: '热点短视频生产', category: '策划 / 拍摄 / 剪辑', desc: '从热点观察与脚本撰写开始，完成拍摄、剪辑、跨团队协调与多平台分发，建立内容从创意到发布的闭环。', tags: ['短视频', '视频剪辑', '热点响应'], link: '#' },
-    { title: '创业项目：野火映画', category: '商业规划 / 项目管理', desc: '为新一代媒体公司制定商业规划与运营模式，并在“互联网+”创新创业大赛本科生组中荣获铜奖。', tags: ['创业项目', '商业策划', '项目领导'], link: '#' },
-    { title: '毕业短片《The Breath of Waves》', category: '导演 / 剪辑 / 影像', desc: '广播电视剪辑与导演专业毕业设计，作品获得优秀毕业设计及优秀学位论文奖项。', tags: ['毕业设计', '影像创作', '纪录片'], link: '#' },
-    { title: '国乐大典与现场演出统筹', category: '艺人统筹 / 现场执行', desc: '参与广东卫视《国乐大典》制作及多场大型演出，负责艺术家排期、排练协调、后台准备和现场执行。', tags: ['现场活动', '艺人统筹', '制作执行'], link: '#' },
-    { title: '影视与展览内容制作', category: '纪录片 / 展览视觉', desc: '参与女性艺术作品展、企业纪录片、手艺纪录片和情景喜剧等项目，积累前期制作、采访协助与现场协作经验。', tags: ['纪录片', '展览视觉', '影视制作'], image: '110.jpeg', link: '#' }
+    { title: '黄埔城市内容运营', category: '城市传播 / 多平台运营', desc: '围绕城市生活、公共空间与区域议题，负责多平台内容策划、编辑与用户互动，建立持续更新的城市叙事。', tags: ['城市传播', '内容运营', '短视频'], image: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80', link: '#' },
+    { title: '热点短视频生产', category: '策划 / 拍摄 / 剪辑', desc: '从热点观察到脚本设计，再到口播、剪辑与分发，确保内容在时间窗口内快速落地并保持传播力。', tags: ['短视频', '视频剪辑', '热点响应'], image: 'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1200&q=80', link: '#' },
+    { title: '创业项目：野火映画', category: '商业规划 / 项目管理', desc: '为面向新媒体与文化内容的创意项目设计商业模式，并推动品牌方向与资源协同。', tags: ['创业项目', '商业策划', '项目领导'], image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80', link: '#' },
+    { title: '毕业短片《The Breath of Waves》', category: '导演 / 剪辑 / 影像', desc: '广播电视剪辑与导演专业毕业设计，围绕海浪与呼吸的关系进行视觉叙事表达，兼具记录性与诗意。', tags: ['毕业设计', '影像创作', '纪录片'], image: 'https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=80', link: '#' },
+    { title: '国乐大典与现场演出统筹', category: '艺人统筹 / 现场执行', desc: '参与大型活动现场协调与艺人执行，确保舞台、拍摄、后勤与节目流程在复杂场景中顺畅衔接。', tags: ['现场活动', '艺人统筹', '制作执行'], image: 'https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1200&q=80', link: '#' },
+    { title: '影视与展览内容制作', category: '纪录片 / 展览视觉', desc: '参与女性艺术作品展、企业纪录片与手艺类纪录片的前期沟通、采访协助和编辑制作。', tags: ['纪录片', '展览视觉', '影视制作'], image: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=80', link: '#' }
   ]
 };

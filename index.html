@@ -3,11 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0d1712" />
   <title>Clio Huang - 个人作品集</title>
-  <meta name="description" content="Clio Huang 的前端工程与交互设计作品集" />
+  <meta name="description" content="Clio Huang 的影像、现场与城市传播作品集" />
 
-  <!-- Google Font (可替换) -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Noto+Sans+SC:wght@400;500;700;800&family=Noto+Serif+SC:wght@600;700;900&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Noto+Sans+SC:wght@400;500;700;800&family=Noto+Serif+SC:wght@600;700;900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -38,48 +41,16 @@
   <main>
     <!-- Hero -->
     <section id="home" class="hero section">
-      <div class="container hero-grid">
-        <div class="hero-left" id="hero-content">
-          <h1 class="reveal-up">你好，我是 <span class="accent" data-site-name>Clio Huang</span></h1>
+      <div class="container hero-shell">
+        <div class="hero-intro reveal-up" id="hero-content">
+          <p class="hero-kicker">Content / Story / Urban Culture</p>
+          <h1 class="hero-title">
+            <span class="accent" data-site-name>Clio Huang</span>
+          </h1>
           <p class="lead reveal-up delay-1" data-site-tagline></p>
-
-          <div class="hero-cta reveal-up delay-2">
-            <a class="btn primary" href="#projects">查看项目</a>
-            <a class="btn outline" href="#contact">联系我</a>
-          </div>
-
-          <ul class="meta-list reveal-up delay-3" data-contact-list></ul>
-          <div class="hero-stats reveal-up delay-3" data-hero-stats></div>
-        </div>
-
-        <div class="hero-right reveal-fade">
-          <div class="profile-card">
-            <div class="avatar" role="img" aria-label="个人头像">
-              <!-- 占位 SVG，可替换为 <img src="your-photo.jpg"> -->
-              <svg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <defs>
-                  <linearGradient id="g" x1="0" x2="1">
-                    <stop offset="0" stop-color="#6C63FF"/>
-                    <stop offset="1" stop-color="#00C2A8"/>
-                  </linearGradient>
-                </defs>
-                <rect rx="20" width="160" height="160" fill="url(#g)"/>
-                <g fill="#fff" transform="translate(30,30)">
-                  <circle cx="50" cy="36" r="22" opacity="0.95"></circle>
-                  <rect x="12" y="74" width="76" height="20" rx="10" opacity="0.12"></rect>
-                  <rect x="18" y="100" width="64" height="6" rx="3" opacity="0.12"></rect>
-                </g>
-              </svg>
-            </div>
-            <div class="profile-info">
-              <h3 data-site-name>Clio Huang</h3>
-              <p class="muted" data-site-title></p>
-              <div class="socials">
-                <a data-social="github" aria-label="GitHub" class="social" target="_blank" rel="noopener">GitHub</a>
-                <a data-social="linkedin" aria-label="LinkedIn" class="social">LinkedIn</a>
-                <a data-social="portfolio" aria-label="作品集" class="social">作品集</a>
-              </div>
-            </div>
+          <div class="scroll-cue reveal-up delay-2" aria-label="向下滚动">
+            <span>Scroll</span>
+            <span class="scroll-arrow">↓</span>
           </div>
         </div>
       </div>
