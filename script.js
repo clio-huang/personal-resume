@@ -390,9 +390,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const scrollCue = document.querySelector('.scroll-cue');
     if (scrollCue) {
       scrollCue.addEventListener('click', () => {
-        const directory = document.querySelector('.directory-card');
-        if (directory) {
-          directory.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        const directorySection = document.querySelector('.directory-wrap');
+        if (directorySection) {
+          directorySection.scrollIntoView({ behavior: 'smooth', block: 'start' });
           return;
         }
 
