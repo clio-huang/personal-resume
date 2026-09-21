@@ -126,8 +126,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const impact = createElement('p', 'experience-block');
         const impactText = item.role.includes('新媒体编辑')
-          ? '影响：通过内容策划、平台运营与跨平台分发，形成稳定的城市传播与用户互动机制。'
-          : '影响：在现场执行与艺人协调中保障演出流程顺畅，推动项目顺利落地。';
+          ? '通过内容策划、平台运营与跨平台分发，形成稳定的城市传播与用户互动机制。'
+          : item.role.includes('导演助理')
+            ? '为纪录片、展览与影视项目提供前期支持与现场协作，提升叙事表达与项目执行质量。'
+            : '在现场执行与艺人协调中保障演出流程顺畅，推动项目顺利落地。';
         impact.append(createElement('strong', '', '影响：'), document.createTextNode(impactText));
 
         content.append(role, scenario, action, impact);
@@ -384,6 +386,26 @@ document.addEventListener('DOMContentLoaded', () => {
         if (navToggle) navToggle.setAttribute('aria-expanded', 'false');
       });
     });
+
+    const scrollCue = document.querySelector('.scroll-cue');
+    if (scrollCue) {
+      scrollCue.addEventListener('click', () => {
+        const directory = document.querySelector('.directory-card');
+        if (directory) {
+          directory.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          return;
+        }
+
+        const sections = [...document.querySelectorAll('main > section[id]')];
+        const current = document.getElementById('home');
+        const index = sections.indexOf(current);
+        const nextSection = sections[index + 1];
+
+        if (nextSection) {
+          nextSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    }
 
     const showPage = () => document.body.classList.remove('preload');
     requestAnimationFrame(showPage);
